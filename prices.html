@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ru">
+    <title>Меню</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/prices.css">
+    <div class="burger">
+        <span></span>
+    </div>
+    <div class="menu">
+      <ul>
+        <li class="nav-new">
+          <a class="newa" href="index.html">Главная</a>
+        </li>
+        <li class="nav-new">
+          <a class="newa" href="slider.html">Слайдер</a>
+        </li>
+        <li class="nav-new">
+          <a class="newa" href="cars.html">Машины</a>
+        </li>
+        <li class="nav-new">
+          <a class="newa" href="location.html">Авторизация</a>
+        </li>
+        <li class="nav-new">
+          <a class="newa" href="purchases.html">Заказ</a>
+        </li>
+        <li class="nav-new">
+          <a class="newa" href="stamps.html">Разные окна</a>
+        </li>
+        <li class="nav-new">
+          <a class="newa" href="prices.html">Меню</a>
+        </li>
+      </ul>
+    </div>
+</html>
+<script>
+  document.querySelector('.burger').addEventListener('click', function(){
+  document.querySelector('.burger span').classList.toggle('active');
+  document.querySelector('.menu').classList.toggle("animate");
+  })
+</script>

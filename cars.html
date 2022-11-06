@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="ru">
+    <title>Машины</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/cars.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    <header class='container-fluid'>
+        <div class="container">
+        <nav class="navbar navbar-light bg-transparent top-nav">
+            <a class="navbar-brand m-sm-1 m-auto" href="#">Авто<span>Парк</span></a>
+            <div class="input-group form-inline mr-auto nav-search d-md-flex d-none">
+            <div class='btn-group'>
+                <button class="browse dropdown-toggle" id="dropdownMenuButtonBrowse" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Найти</button>
+                <div class="dropdown-menu dropdown-menu-browse" aria-labelledby="dropdownMenuButtonBrowse">
+                <p>Машины</p> <hr>
+                <a class="dropdown-item" href="#">Марки</a>
+                <a class="dropdown-item" href="#">Машини</a>
+                <a class="dropdown-item" href="#">Товары</a>
+                <a class="dropdown-item" href="#">Наши покупатели</a>
+                <a class="dropdown-item" href="#">Отзывы</a>
+                <a class="dropdown-item" href="#">Цены</a>
+                <a class="dropdown-item" href="#">О нас</a>
+                <a class="dropdown-item" href="#">Наши партнеры</a>
+                <p>Авто запчасти</p> <hr>
+                <a class="dropdown-item" href="#">Товары</a>
+                <a class="dropdown-item" href="#">Доставка</a>
+                </div>
+            </div>
+            <input class="my-0 py-1 search-input" type="text" placeholder="Search for Item..." aria-label="Search">
+            <div class="input-group-append">
+                <span class="input-group-text red lighten-3" id="basic-text1"><i class="fas fa-search text-grey" aria-hidden="true"></i></span>
+            </div>
+            </div>
+            <div class='btn-group btn-group-cart m-sm-1 m-auto'>
+            <button class="cart dropdown-toggle" id="dropdownMenuButtonCart" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+            </div>
+            <div class='btn-group'>
+            <button class="account button dropdown-toggle m-sm-1 m-auto" id="dropdownMenuButtonBrowse" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Аккаунт</button>
+                <div class="dropdown-menu dropdown-menu-browse" aria-labelledby="dropdownMenuButtonBrowse">
+                <p>Информация об аккаунте</p> <hr>
+                <a class="dropdown-item" href="#">Данные об аккаунте</a>
+                <a class="dropdown-item" href="#">История заказов</a>
+                <a class="dropdown-item" href="#">Бонусная карта</a>
+                </div>
+            </div>
+        </nav>
+        </div>
+
+        <div class="container-fluid bottom-menu">
+        <div class="container">
+            <nav class="navbar navbar-expand-md navbar-light bg-transparent">
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav m-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                    <a class="nav-link text-dark" href="index.html">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link text-dark" href="slider.html">Слайдер</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link text-dark" href="cars.html">Машины</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link text-dark" href="location.html">Авторизация</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link text-dark" href="purchases.html">Заказ</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link text-dark" href="stamps.html">Разные окна</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link text-dark" href="prices.html">Меню</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        </div>      
+    </header>
+        <!-- Основной блок слайдера -->
+    <div class="slider" style="padding: 0;">
+        <!-- Первый слайд -->
+        <div class="item">
+        <img src="img/car2.webp">
+        </div>
+
+        <!-- Второй слайд -->
+        <div class="item">
+        <img src="img/img17.jpg">
+        </div>
+
+        <!-- Третий слайд -->
+        <div class="item">
+        <img src="img/img18.jpg">
+        </div>
+
+        <!-- Кнопки-стрелочки -->
+        <a class="previous" onclick="previousSlide()">&#10094;</a>
+        <a class="next" onclick="nextSlide()">&#10095;</a>
+    </div>
+    <div class="img-magnifier-container">
+        <img id="myimage" src="img/car1.jpg" width="600" height="400">
+    </div>
+</html>
+
+<script>
+    /* Устанавливаем стартовый индекс слайда по умолчанию: */
+    let slideIndex = 1;
+    /* Вызываем функцию, которая реализована ниже: */
+    showSlides(slideIndex);
+
+    /* Увеличиваем индекс на 1 — показываем следующий слайд: */
+    function nextSlide() {
+        showSlides(slideIndex += 1);
+    }
+
+    /* Уменьшаем индекс на 1 — показываем предыдущий слайд: */
+    function previousSlide() {
+        showSlides(slideIndex -= 1);  
+    }
+
+    /* Устанавливаем текущий слайд: */
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    /* Функция перелистывания: */
+    function showSlides(n) {
+        /* Обращаемся к элементам с названием класса "item", то есть к картинкам: */
+        let slides = document.getElementsByClassName("item");
+        
+        /* Проверяем количество слайдов: */
+        if (n > slides.length) {
+            slideIndex = 1
+        }
+        if (n < 1) {
+            slideIndex = slides.length
+        }
+        /* Проходим по каждому слайду в цикле for: */
+        for (let slide of slides) {
+            slide.style.display = "none";
+        }
+        /* Делаем элемент блочным: */
+        slides[slideIndex - 1].style.display = "block";    
+    }
+</script>
+<script>
+    function magnify(imgID, zoom) {
+    var img, glass, w, h, bw;
+    img = document.getElementById(imgID);
+
+    /* Создать увеличительное стекло: */
+    glass = document.createElement("DIV");
+    glass.setAttribute("class", "img-magnifier-glass");
+
+    /* Вставить увеличительное стекло: */
+    img.parentElement.insertBefore(glass, img);
+
+    /* Установите свойства фона для стекла лупы: */
+    glass.style.backgroundImage = "url('" + img.src + "')";
+    glass.style.backgroundRepeat = "no-repeat";
+    glass.style.backgroundSize = (img.width * zoom) + "px " + (img.height * zoom) + "px";
+    bw = 3;
+    w = glass.offsetWidth / 2;
+    h = glass.offsetHeight / 2;
+
+    /* Выполните функцию, когда кто-то перемещает лупу по изображению: */
+    glass.addEventListener("mousemove", moveMagnifier);
+    img.addEventListener("mousemove", moveMagnifier);
+
+    /* а также для сенсорных экранов: */
+    glass.addEventListener("touchmove", moveMagnifier);
+    img.addEventListener("touchmove", moveMagnifier);
+    function moveMagnifier(e) {
+    var pos, x, y;
+    /* Предотвратите любые другие действия, которые могут возникнуть при перемещении по изображению */
+    e.preventDefault();
+    /* Получить позиции курсора x и y: */
+    pos = getCursorPos(e);
+    x = pos.x;
+    y = pos.y;
+    /* Не допускайте, чтобы лупа находилась вне изображения: */
+    if (x > img.width - (w / zoom)) {x = img.width - (w / zoom);}
+    if (x < w / zoom) {x = w / zoom;}
+    if (y > img.height - (h / zoom)) {y = img.height - (h / zoom);}
+    if (y < h / zoom) {y = h / zoom;}
+    /* Установите положение стекла лупы: */
+    glass.style.left = (x - w) + "px";
+    glass.style.top = (y - h) + "px";
+    /* Покажите, что такое увеличительное стекло "смотреть": */
+    glass.style.backgroundPosition = "-" + ((x * zoom) - w + bw) + "px -" + ((y * zoom) - h + bw) + "px";
+    }
+
+    function getCursorPos(e) {
+    var a, x = 0, y = 0;
+    e = e || window.event;
+    /* Получить x и y позиции изображения: */
+    a = img.getBoundingClientRect();
+    /* Вычислите координаты курсора x и y относительно изображения: */
+    x = e.pageX - a.left;
+    y = e.pageY - a.top;
+    /* Consider any page scrolling: */
+    x = x - window.pageXOffset;
+    y = y - window.pageYOffset;
+    return {x : x, y : y};
+    }
+    }
+</script>
+<script>
+    /* Выполните функцию увеличения: */
+    magnify("myimage", 3);
+    /* Укажите идентификатор изображения и прочность стекла лупы: */
+</script>
